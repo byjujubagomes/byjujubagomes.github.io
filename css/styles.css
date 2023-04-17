@@ -90,8 +90,13 @@
 }
 
 @font-face{
-  font-family: "Fonte Gaia";
+  font-family: "Gaia";
   src: url("../assets/fonts/muli.regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "GaiaGrande";
+  src: url("../assets/fonts/Zipper-Regular.ttf") format("truetype");
 }
 
 .map-responsive{
@@ -4245,7 +4250,6 @@ textarea.form-control-lg {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
 }
 
 .navbar-toggler-icon {
@@ -4601,7 +4605,6 @@ textarea.form-control-lg {
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -4649,6 +4652,55 @@ textarea.form-control-lg {
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
+
+.card-cabec-gaia {
+  color: #fff;
+  background-color: rgba(125, 178, 201, 0.7);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: absolute;
+  width: fit-content;
+  bottom: 100px;
+  left: 150px;
+}
+
+@media (max-width: 768px) {
+	.card-cabec-gaia {
+	  bottom: 50px;
+	  left: 50px;
+	}
+	
+}
+
+.card-titulo {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  padding-left: 1rem;
+  position: absolute;
+  width: fit-content;
+  bottom: 5px;
+  left: 5px;
+}
+
+.card-depoimento {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid rgba(125, 178, 201, 0.125);
+  border-radius: 0.25rem;
+  color: #7db2c9;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(125, 178, 201, 0.5);
+}
+
 
 .card {
   position: relative;
@@ -4744,6 +4796,13 @@ textarea.form-control-lg {
   bottom: 0;
   left: 0;
   padding: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.card-img-cabec {
+  position: absolute;
+  width: fit-content;
+  padding-bottom: 50px;
   border-radius: calc(0.25rem - 1px);
 }
 
@@ -6188,6 +6247,7 @@ textarea.form-control-lg {
   width: 100%;
   overflow: hidden;
 }
+
 .carousel-inner::after {
   display: block;
   clear: both;
@@ -6204,11 +6264,32 @@ textarea.form-control-lg {
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
   }
 }
+
+/*Carousel Depoimentos*/
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item:not(#cabecGaia) {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+/*Fim*/
+
 
 .carousel-item.active,
 .carousel-item-next,
@@ -6261,29 +6342,30 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
   padding: 0;
-  color: #fff;
+  color: #000;
   text-align: center;
   background: none;
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .carousel-control-prev,
+.carousel-control-prev,
 .carousel-control-next {
     transition: none;
   }
 }
-.carousel-control-prev:hover, .carousel-control-prev:focus,
+
+/*.carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
   color: #fff;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
-}
+}*/
 
 .carousel-control-prev {
   left: 0;
@@ -6333,11 +6415,12 @@ textarea.form-control-lg {
   margin-left: 15%;
   list-style: none;
 }
+
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
+  width: 10px;
+  height: 10px;
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
@@ -6348,9 +6431,11 @@ textarea.form-control-lg {
   border: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
+  border-radius: 50%;
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators [data-bs-target] {
     transition: none;
@@ -8020,6 +8105,10 @@ textarea.form-control-lg {
 
 .text-opacity-100 {
   --bs-text-opacity: 1;
+}
+
+.text-caps{
+	font-family: "GaiaGrande", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .bg-primary {
@@ -11531,10 +11620,9 @@ body {
   background-color: #fff;
 }
 #mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.75rem;
+  font-size: 200%;
+  padding: 0;
   color: #7db2c9;
-  border: 1px solid #7db2c9;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11568,10 +11656,10 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.75);
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11608,6 +11696,24 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+}
+
+.carousel-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 15rem;
+  padding: 1rem 0;
+  background: #fff;
+}
+
+.carousel-header-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 15rem;
+  padding: 6rem 0;
+  background: #fff;
 }
 
 .masthead {
@@ -11784,9 +11890,11 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
-  background: linear-gradient(to bottom, rgba(247, 211, 142, 0.3), rgba(247, 211, 142, 0.3)), url("../assets/img/textura-areia.jpg");
-  background-position: center;
+  padding: 2rem 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../assets/img/gaia-folha-peq.png");
+  background-position: right bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  margin-right: 0;
 }
+
