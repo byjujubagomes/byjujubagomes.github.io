@@ -4719,6 +4719,10 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../assets/img/gaia-folha-branco.png"), linear-gradient(to bottom, rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0));  
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .card-titulo {
@@ -4761,6 +4765,7 @@ textarea.form-control-lg {
 .card-depoimento {
   position: relative;
   align-items: center;
+  vertical-align: middle;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -6350,7 +6355,7 @@ textarea.form-control-lg {
   .carousel-inner {
     display: flex;
   }
-  .carousel-item {
+  .carousel-item:not(#cabecGaia) {
     margin-right: 0;
     flex: 0 0 50%;
     display: block;
@@ -11786,9 +11791,9 @@ body {
   width: 100%;
   height: auto;
   min-height: 15rem;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 2rem 0;
   background: linear-gradient(to bottom, rgba(125, 178, 201, 0.0), rgba(125, 178, 201, 0.0), rgba(125, 178, 201, 0.0), rgba(255, 255, 255, 0.0)), url("../assets/img/gaia-folha.png");  
-  background-position: bottom;
+  background-position: left bottom;
   background-repeat: repeat-x;
   background-attachment: scroll;
   background-size: 417px 438px;

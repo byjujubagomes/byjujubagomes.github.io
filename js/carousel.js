@@ -9,20 +9,20 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   var cardWidth = $(".carousel-item").width();
   var scrollPosition = 0;
   $("#carouselDepoimentos2 .carousel-control-next").on("click", function () {
-    if (scrollPosition < carouselWidth - cardWidth * 2) {
+    if (scrollPosition < (cardWidth * 9)) {
       scrollPosition += cardWidth;
       $("#carouselDepoimentos2 .carousel-inner").animate(
         { scrollLeft: scrollPosition },
-        600
-      );
-    }
+        674.5
+	);
+	}
   });
   $("#carouselDepoimentos2 .carousel-control-prev").on("click", function () {
     if (scrollPosition > 0) {
       scrollPosition -= cardWidth;
       $("#carouselDepoimentos2 .carousel-inner").animate(
         { scrollLeft: scrollPosition },
-        600
+        674.5
       );
     }
   });
