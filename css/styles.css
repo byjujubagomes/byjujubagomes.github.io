@@ -4765,13 +4765,13 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   word-wrap: break-word;
   background-color: #fff;
   border: 1px solid rgba(125, 178, 201, 0.125);
   border-radius: 0.25rem;
   color: #7db2c9;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 0.5rem 1rem rgba(125, 178, 201, 0.5);
 }
 
@@ -6350,9 +6350,9 @@ textarea.form-control-lg {
   .carousel-inner {
     display: flex;
   }
-  .carousel-item:not(#cabecGaia) {
+  .carousel-item {
     margin-right: 0;
-    flex: 0 0 33.333333%;
+    flex: 0 0 50%;
     display: block;
   }
 }
@@ -11781,6 +11781,19 @@ body {
   background: #fff;
 }
 
+.depoimentos-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 15rem;
+  padding: 2rem 0 0 0;
+  background: linear-gradient(to bottom, rgba(125, 178, 201, 0.0), rgba(125, 178, 201, 0.0), rgba(125, 178, 201, 0.0), rgba(255, 255, 255, 0.0)), url("../assets/img/gaia-folha.png");  
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-size: 417px 438px;
+}
+
 .carousel-header-section {
   position: relative;
   width: 100%;
@@ -12302,3 +12315,4 @@ body {
     font-size: 12px;
   }
 }
+
