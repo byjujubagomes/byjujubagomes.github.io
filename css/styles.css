@@ -4679,15 +4679,16 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: transparent;
   width: 350px;
-  height: 210px;
+  height: 217px;
   perspective: 1000px;
+  margin: 0.3rem;
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
+  text-align: left;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -4703,7 +4704,7 @@ textarea.form-control-lg {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .flip-card-front {
@@ -4718,11 +4719,12 @@ textarea.form-control-lg {
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: url("../assets/img/gaia-folha-branco.png"), linear-gradient(to bottom, rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0));  
-  background-position: left bottom;
+  align-items: start;
+  background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0));  
+  background-position: right bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  padding: 2rem;
 }
 
 .card-titulo {
@@ -4770,13 +4772,14 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  height: 90%;
   font-size: 0.7rem;
   word-wrap: break-word;
   background-color: #fff;
   border: 1px solid rgba(125, 178, 201, 0.125);
   border-radius: 0.25rem;
   color: #7db2c9;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(125, 178, 201, 0.5);
 }
 
@@ -6364,7 +6367,7 @@ textarea.form-control-lg {
 
 @media (max-width: 767px) {
   .card .img-wrapper {
-    height: 17em;
+    height: 20em;
   }
 }
 /*Fim*/
