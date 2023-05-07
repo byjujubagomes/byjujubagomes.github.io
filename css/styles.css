@@ -99,6 +99,16 @@
   src: url("../assets/fonts/Zipper-Regular.ttf") format("truetype");
 }
 
+@font-face{
+  font-family: "GaiaBold";
+  src: url("../assets/fonts/next-art.bold.otf") format("truetype");
+}
+
+@font-face{
+  font-family: "GaiaHeavy";
+  src: url("../assets/fonts/next-art.heavy.otf") format("truetype");
+}
+
 .map-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -4772,7 +4782,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  height: 90%;
+  height: 340px;
   font-size: 0.7rem;
   word-wrap: break-word;
   background-color: #fff;
@@ -4904,6 +4914,27 @@ textarea.form-control-lg {
 .card-img-bottom {
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+@media (min-width: 767px) {
+	.image-resp {
+		min-height: 530px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		align-items: center center;
+	}
+}
+@media (max-width: 767px) {
+	.image-resp {
+		min-height: 430px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		align-items: center center;
+	}
 }
 
 .card-group > .card {
@@ -12323,4 +12354,54 @@ body {
     font-size: 12px;
   }
 }
+
+.card-cabec {
+    background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));  
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+	max-width: 420px;
+	position: absolute;
+	padding: 1.5rem;
+	justify-content: start ;
+	align-items: start;
+	left: 2rem;
+	bottom: 3rem;
+	color: #000;
+	font-size: 0.8rem;
+}
+
+.card-numeros {
+	border: 1.5px solid #7db2c9;
+    background: url("../assets/img/gaia-folha-colorida-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0));  
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+	background-size: contain;
+	width: 180px;
+	height: 130px;
+	position: relative;
+	padding: 1.5rem;
+	justify-content: start;
+	align-items: start;
+	color: #000;
+	font-size: 0.8rem;
+	margin-bottom: 10px;
+}
+
+.botao-cabec {
+	border: 1.5px solid #7db2c9;
+	border-radius: 5px;
+	color: #fff;
+	padding: 1rem;
+	background-color: #7db2c9;
+	opacity: 90%;
+	font-size: 0.8rem;
+	text-decoration: none;
+}
+
+.botao-destaque:hover {
+	opacity: 100%;
+}
+
 
