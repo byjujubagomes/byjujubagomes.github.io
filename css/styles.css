@@ -12373,7 +12373,7 @@ body {
 
 .card-numeros {
 	border: 1.5px solid #7db2c9;
-    background: url("../assets/img/gaia-folha-colorida-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0));  
+    background: url("../assets/img/gaia-folha-colorida-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));  
     background-position: right bottom;
     background-repeat: no-repeat;
     background-attachment: scroll;
