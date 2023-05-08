@@ -4782,7 +4782,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  height: 340px;
+  height: 280px;
   font-size: 0.7rem;
   word-wrap: break-word;
   background-color: #fff;
@@ -12360,15 +12360,26 @@ body {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-attachment: scroll;
-	max-width: 420px;
+	max-width: 500px;
 	position: absolute;
 	padding: 1.5rem;
 	justify-content: start ;
 	align-items: start;
-	left: 2rem;
-	bottom: 3rem;
+	left: 5rem;
+	bottom: 5rem;
 	color: #000;
 	font-size: 0.8rem;
+}
+
+@media (max-width: 500px) {
+	.card-cabec {
+		max-width: 335px;
+		left: 2rem;
+		bottom: 3rem;
+	}
+	.card-depoimento {
+	  height: 375px;
+	}	
 }
 
 .card-numeros {
