@@ -4928,7 +4928,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767px) {
 	.image-resp {
-		min-height: calc(100vh - 100px);
+		min-height: 400px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
