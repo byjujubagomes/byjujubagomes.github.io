@@ -29,3 +29,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 } else {
   $(multipleCardCarousel).addClass("slide");
 }
+
+$('#exampleModalCenter').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})

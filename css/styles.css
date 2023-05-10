@@ -4734,7 +4734,7 @@ textarea.form-control-lg {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .card-titulo {
@@ -4918,7 +4918,7 @@ textarea.form-control-lg {
 
 @media (min-width: 767px) {
 	.image-resp {
-		min-height: 530px;
+		min-height: calc(100vh - 80px);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4928,7 +4928,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767px) {
 	.image-resp {
-		min-height: 430px;
+		min-height: calc(100vh - 80px);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -12373,7 +12373,7 @@ body {
 
 @media (max-width: 500px) {
 	.card-cabec {
-		max-width: 335px;
+		width: calc(100vw - 65px);
 		left: 2rem;
 		bottom: 3rem;
 	}
@@ -12414,5 +12414,23 @@ body {
 .botao-destaque:hover {
 	opacity: 100%;
 }
+
+.btn-saibamais {
+  color: #fff;
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.6rem;  
+  font-weight: bolder;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  box-shadow: 0px;
+}
+.btn-saibamais:hover {
+  color: #fff;
+}
+
 
 
