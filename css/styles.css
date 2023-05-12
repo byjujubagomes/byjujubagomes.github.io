@@ -4928,7 +4928,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767px) {
 	.image-resp {
-		min-height: calc(100vh - 100px);
+		min-height: calc(100vh - 120px);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -12414,7 +12414,7 @@ body {
 		text-align: left;
 	}
 	.card-depoimento {
-	  height: 385px;
+	  height: 390px;
 	}	
 	.botao-cabec {
 		font-size: 0.6rem;
