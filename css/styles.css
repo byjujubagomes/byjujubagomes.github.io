@@ -4928,7 +4928,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767px) {
 	.image-resp {
-		min-height: 450px;
+		min-height: 470px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -12356,7 +12356,10 @@ body {
 }
 
 .card-cabec {
-    background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));  
+    /*background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(190, 217, 228, 0.5), rgba(190, 217, 228, 0.6), rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8));  */
+	/*background: linear-gradient(to bottom, rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8), rgba(190, 217, 228, 0.9), rgba(190, 217, 228, 0.9));  */
+	background: rgb(190,218,228);
+	background: linear-gradient(71deg, rgba(190,218,228,0.9025735294117647) 0%, rgba(190,218,228,0.8997724089635855) 68%, rgba(190,218,228,0.8297443977591037) 84%, rgba(190,217,228,0.6784838935574229) 100%);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12367,7 +12370,7 @@ body {
 	align-items: start;
 	left: 5rem;
 	bottom: 5rem;
-	color: #000;
+	color: #fff;
 	font-size: 0.8rem;
 }
 
@@ -12390,11 +12393,11 @@ body {
 }
 
 .botao-cabec {
-	border: 1.5px solid #7db2c9;
+	border: 1.5px solid #ffffff;
 	border-radius: 5px;
-	color: #fff;
-	padding: 1rem;
-	background-color: #7db2c9;
+	color: #7db2c9;
+	padding: 0.8rem;
+	background-color: #ffffff;
 	opacity: 90%;
 	font-size: 0.8rem;
 	text-decoration: none;
@@ -12408,7 +12411,7 @@ body {
 	.card-cabec {
 		width: calc(100vw - 15px);
 		left: 0.5rem;
-		top: 1rem;
+		bottom: 1rem;
 		font-size: 0.7rem;
 		height: 120px;
 		text-align: left;
@@ -12451,12 +12454,12 @@ body {
 }
 
 .back-to-top {
-	border: 1.5px solid #7db2c9;
+	border: 1.5px solid #bed9e4;
 	border-radius: 5px;
 	color: #fff;
 	padding: 0.7rem;
-	background-color: #7db2c9;
-	opacity: 80%;
+	background-color: #bed9e4;
+	opacity: 90%;
 	font-size: 0.8rem;
 	text-decoration: none;
 	position: fixed;
@@ -12468,12 +12471,12 @@ body {
 }
 
 .fale-conosco {
-	border: 1.5px solid #7db2c9;
+	border: 1.5px solid #bed9e4;
 	border-radius: 5px;
-	color: #fff;
+	color: #bed9e4;
 	padding: 0.7rem;
-	background-color: #7db2c9;
-	opacity: 80%;
+	background-color: #ffffff;
+	opacity: 90%;
 	font-size: 0.7rem;
 	text-decoration: none;
 	position: fixed;

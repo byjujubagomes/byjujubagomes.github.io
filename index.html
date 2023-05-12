@@ -11,6 +11,8 @@
 		<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+		<!-- Iconic icons (free version)-->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
         <!-- Google fonts-->
@@ -36,11 +38,11 @@
 				</button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#home"><b><i class="fa-solid fa-house"></i>&nbsp;HOME</b></a></li>
-                        <li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#sobre"><b><i class="fa-regular fa-face-smile"></i>&nbsp;QUEM SOMOS</b></a></li>
+                        <li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#home"><b><ion-icon name="home-outline"></ion-icon>&nbsp;HOME</b></a></li>
+                        <li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#sobre"><b><ion-icon name="people-outline"></ion-icon>&nbsp;QUEM SOMOS</b></a></li>
                         <li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#servicos"><b><i class="fa-solid fa-water"></i>&nbsp;SERVIÇOS</b></a></li>
-						<li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#depoimentos"><b><i class="fa-regular fa-comments"></i>&nbsp;DEPOIMENTOS</b></a></li>
-						<li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#depoimentos"><b><i class="fa-brands fa-whatsapp"></i>&nbsp;FALE CONOSCO</b></a></li>
+						<li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="#depoimentos"><b><ion-icon name="chatbubbles-outline"></ion-icon>&nbsp;DEPOIMENTOS</b></a></li>
+						<li class="nav-item"><a class="nav-link text-caps" style="font-size: 0.9rem;" href="https://wa.me/5521996865654/?text=Quero%20ser%20uma%20Gaia!" target="_blank"><b><ion-icon name="logo-whatsapp"></ion-icon>&nbsp;FALE CONOSCO</b></a></li>
                     </ul>
                 </div>
 				<!--a class="navbar-brand" href="login.html">
@@ -621,13 +623,13 @@
 				$("body").append("<a href='#' class='back-to-top'><i class='fa-solid fa-angles-up fa-xl'></i></a>"), 
 				$(function toTop() {
 					$(window).scroll(function(){
-						$(this).scrollTop() > 100 ? $(".back-to-top").fadeIn() : $(".back-to-top").fadeOut()
+						$(this).scrollTop() > 50 ? $(".back-to-top").fadeIn() : $(".back-to-top").fadeOut()
 					}), $(".back-to-top").click(function() { 
 					return $("html, body").animate({
 					scrollTop: 0
 					}, 800), 0})
 				});
-				$("body").append("<a href='https://wa.me/5521996865654/?text=Quero%20ser%20Gaia!' class='fale-conosco' target='_blank'><i class='fa-brands fa-whatsapp fa-xl'></i></a>"), 
+				$("body").append("<a href='https://wa.me/5521996865654/?text=Quero%20ser%20uma%20Gaia!' class='fale-conosco' target='_blank'><i class='fa-brands fa-whatsapp fa-xl'></i></a>"), 
 				$(function toTop() {
 					$(window).scroll(function(){
 						$(this).scrollTop() > 100 ? $(".fale-conosco").fadeIn() : $(".fale-conosco").fadeOut()
