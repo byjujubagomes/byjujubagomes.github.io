@@ -143,15 +143,15 @@
 				<div class="row row-cols-1 row-cols-md-3 g-6 justify-content-center">
 					<div class="col-md-3">
 						<div class="card-numeros">
-							<h1 class="text-gaia" style="font-family: GaiaHeavy; margin-bottom: 1px;">5</h1>
+							<h1 class="text-gaia counter" data-count="5" style="font-family: GaiaHeavy; margin-bottom: 1px;">0</h1>
 							Anos de Gaia
 						</div>
 						<div class="card-numeros">
-							<h1 class="text-gaia" style="font-family: GaiaHeavy; margin-bottom: 1px;">1.582</h1>
+							<h1 class="text-gaia counter" data-count="582" style="font-family: GaiaHeavy; margin-bottom: 1px;">0</h1>
 							Alunas
 						</div>
 						<div class="card-numeros">
-							<h1 class="text-gaia" style="font-family: GaiaHeavy; margin-bottom: 1px;">86</h1>
+							<h1 class="text-gaia counter" data-count="86" style="font-family: GaiaHeavy; margin-bottom: 1px;">0</h1>
 							Surftrips
 						</div>
 					</div>
@@ -620,6 +620,24 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
+			  $('.counter').each(function() {
+				var $this = $(this),
+					countTo = $this.attr('data-count');
+				$({ countNum: $this.text()}).animate({
+				  countNum: countTo
+				},
+				{
+				  duration: 3000,
+				  easing:'linear',
+				  step:function() {
+					$this.text(Math.floor(this.countNum));
+				  },
+				  complete:function() {
+					$this.text(this.countNum);
+				  }
+				});
+			  });
+
 				$("body").append("<a href='#' class='back-to-top'><i class='fa-solid fa-angles-up fa-xl'></i></a>"), 
 				$(function toTop() {
 					$(window).scroll(function(){
