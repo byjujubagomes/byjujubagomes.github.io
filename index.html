@@ -40,6 +40,7 @@
                         <li class="nav-item"><a class="nav-link text-caps" href="#sobre"><b>QUEM SOMOS</b></a></li>
                         <li class="nav-item"><a class="nav-link text-caps" href="#servicos"><b>SERVIÇOS</b></a></li>
 						<li class="nav-item"><a class="nav-link text-caps" href="#depoimentos"><b>DEPOIMENTOS</b></a></li>
+						<li class="nav-item"><a class="nav-link text-caps" href="#depoimentos"><b>FALE CONOSCO</b></a></li>
                     </ul>
                 </div>
 				<!--a class="navbar-brand" href="login.html">
@@ -61,7 +62,7 @@
 						<div class="card text-white border-0">
 							<div class="image-resp" style="background-image: url('assets/img/cabec-onda-isadora.jpeg');" alt="...">
 								<div class="card-cabec">
-									<p style="font-family: GaiaHeavy; font-size: 1.1rem;">QUEM SOMOS?</p>
+									<p class="titulo-cabec">QUEM SOMOS?</p>
 									Você certamente já ouviu falar sobre a família Gaia. 
 									Quer saber mais sobre nossa história e quem somos?<br><br>
 									<a class="botao-cabec" href="#sobre">SAIBA MAIS</a>
@@ -73,7 +74,7 @@
 						<div class="card text-white border-0">
 							<div class="image-resp" style="background-image: url('assets/img/cabec-golfinho-noronha.jpeg');" alt="...">
 								<div class="card-cabec">
-									<p style="font-family: GaiaHeavy; font-size: 1.1rem;">NOSSOS SERVIÇOS</p>
+									<p class="titulo-cabec">NOSSOS SERVIÇOS</p>
 									O surfe vai muito além de ficar em pé em uma prancha e por isso temos tudo para a sua evolução<br><br>
 									<a class="botao-cabec" href="#servicos">CONHEÇA</a>
 								</div>
@@ -84,8 +85,8 @@
 						<div class="card text-white border-0">
 							<div class="image-resp" style="background-image: url('assets/img/cabec-ju-remando.jpeg');" alt="...">
 								<div class="card-cabec">
-									<p style="font-family: GaiaHeavy; font-size: 1.1rem;">DEPOIMENTOS</p>
-									Nossa cultura traz um impacto gigante para vida de nossas alunas e ninguém melhor do que elas para dizer isso<br><br>
+									<p class="titulo-cabec">DEPOIMENTOS</p>
+									Nossa cultura tem um impacto gigante na vida das alunas e ninguém melhor do que elas para dizer isso<br><br>
 									<a class="botao-cabec" href="#depoimentos">VEJA O QUE ELAS DIZEM</a>
 								</div>
 							</div>
@@ -95,7 +96,7 @@
 						<div class="card text-white border-0">
 							<div class="image-resp" style="background-image: url('assets/img/cabec-onda-ju.jpeg');" alt="...">
 								<div class="card-cabec">
-									<p style="font-family: GaiaHeavy; font-size: 1.1rem;">GAIA NAS REDES</p>
+									<p class="titulo-cabec">GAIA NAS REDES</p>
 									Quer nos conhecer melhor? Venha conhecer nossas redes sociais!<br><br>
 									<a class="botao-cabec" href="#insta">QUERO CONHECER</a>
 								</div>
@@ -358,7 +359,7 @@
 					<div class="flip-card">
 						<div class="flip-card-inner text-white">
 							<div class="flip-card-front">
-								<img src="assets/img/galera-na-areia.png" class="card-img" alt="...">
+								<img src="assets/img/treino-fisico-funcional.jpeg" class="card-img" alt="...">
 								<p class="card-titulo text-start ">TREINO FÍSICO E FUNCIONAL</p>
 							</div>
 							<div class="flip-card-back">
@@ -392,7 +393,7 @@
 					<div class="flip-card">
 						<div class="flip-card-inner text-white">
 							<div class="flip-card-front">
-								<img src="assets/img/golfinho-noronha.jpeg" class="card-img" alt="...">
+								<img src="assets/img/surfe-turma-especial.jpeg" class="card-img" alt="...">
 								<p class="card-titulo text-start">AULA DE SURFE TURMA ESPECIAL</p>
 							</div>
 							<div class="flip-card-back">
@@ -409,7 +410,7 @@
 					<div class="flip-card">
 						<div class="flip-card-inner text-white">
 							<div class="flip-card-front">
-								<img src="assets/img/galera-na-agua.jpeg" class="card-img" alt="...">
+								<img src="assets/img/planilha-treino.jpeg" class="card-img" alt="...">
 								<p class="card-titulo text-start">PLANILHA DE TREINO</p>
 							</div>
 							<div class="flip-card-back">
@@ -615,8 +616,24 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-		
-
-		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("body").append("<a href='#' class='back-to-top'><i class='fa-solid fa-angles-up fa-xl'></i></a>"), 
+				$(function toTop() {
+					$(window).scroll(function(){
+						$(this).scrollTop() > 100 ? $(".back-to-top").fadeIn() : $(".back-to-top").fadeOut()
+					}), $(".back-to-top").click(function() { 
+					return $("html, body").animate({
+					scrollTop: 0
+					}, 800), 0})
+				});
+				$("body").append("<a href='https://wa.me/5521996865654/?text=Quero%20ser%20Gaia!' class='fale-conosco' target='_blank'><i class='fa-brands fa-whatsapp fa-xl'></i></a>"), 
+				$(function toTop() {
+					$(window).scroll(function(){
+						$(this).scrollTop() > 100 ? $(".fale-conosco").fadeIn() : $(".fale-conosco").fadeOut()
+					})
+				});
+			});
+		</script>
     </body>
 </html>

@@ -4928,7 +4928,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767px) {
 	.image-resp {
-		min-height: 400px;
+		min-height: calc(100vh - 100px);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -12371,17 +12371,6 @@ body {
 	font-size: 0.8rem;
 }
 
-@media (max-width: 500px) {
-	.card-cabec {
-		width: calc(100vw - 65px);
-		left: 2rem;
-		bottom: 3rem;
-	}
-	.card-depoimento {
-	  height: 375px;
-	}	
-}
-
 .card-numeros {
 	border: 1.5px solid #7db2c9;
     background: url("../assets/img/gaia-folha-colorida-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));  
@@ -12415,6 +12404,35 @@ body {
 	opacity: 100%;
 }
 
+@media (max-width: 500px) {
+	.card-cabec {
+		width: calc(100vw - 15px);
+		left: 0.5rem;
+		top: 1rem;
+		font-size: 0.7rem;
+		height: 120px;
+		text-align: left;
+	}
+	.card-depoimento {
+	  height: 385px;
+	}	
+	.botao-cabec {
+		font-size: 0.6rem;
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+	}
+	.titulo-cabec {
+		text-align: left;
+	}
+}
+
+.titulo-cabec {
+	font-family: GaiaHeavy;
+	font-size: 1.1rem;	
+}
+
+
 .btn-saibamais {
   color: #fff;
   background-color: transparent;
@@ -12432,5 +12450,45 @@ body {
   color: #fff;
 }
 
+.back-to-top {
+	border: 1.5px solid #7db2c9;
+	border-radius: 5px;
+	color: #fff;
+	padding: 0.7rem;
+	background-color: #7db2c9;
+	opacity: 80%;
+	font-size: 0.8rem;
+	text-decoration: none;
+	position: fixed;
+	z-index: 999;
+	bottom: 5rem; /* posição vertical: quanto maior, mais para cima */
+	right: 1rem; /* posição horizontal: quanto maior, mais para esquerda */
+	display:none;
+	width: 40px;
+}
 
+.fale-conosco {
+	border: 1.5px solid #7db2c9;
+	border-radius: 5px;
+	color: #fff;
+	padding: 0.7rem;
+	background-color: #7db2c9;
+	opacity: 80%;
+	font-size: 0.7rem;
+	text-decoration: none;
+	position: fixed;
+	z-index: 999;
+	bottom: 2rem; /* posição vertical: quanto maior, mais para cima */
+	right: 1rem; /* posição horizontal: quanto maior, mais para esquerda */
+	display:none;
+	width: 40px;
+}
+
+.back-to-top:active, .back-to-top:focus, .back-to-top:hover, .fale-conosco:active, .fale-conosco:focus, .fale-conosco:hover {
+text-decoration: none;
+}
+
+.back-to-top i {
+font-size: 3em; /* alterar tamanho do botão */
+}
 
