@@ -12017,13 +12017,33 @@ body {
 
 .footer {
   padding: 2rem 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url("../assets/img/aereo-praia.jpeg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), url("../assets/img/bg-rodape.png");
   background-size: cover;
-  background-position: center center;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-attachment: scroll;
   margin-right: 0;
 }
+
+.card-rodape{
+    box-shadow: 2px 2px 10px #DADADA;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 25px;
+	border: 1px solid #fff;
+	width: fit-content;
+	opacity: 90%;
+  }
+
+.card-rodape-2{
+    box-shadow: 2px 2px 10px #DADADA;
+    padding: 1rem;
+    background-color: #bed9e4;
+    border-radius: 25px;
+	border: 1px solid #bed9e4;
+	width: fit-content;
+	opacity: 80%;
+  }
 
 .card-counter{
     box-shadow: 2px 2px 10px #DADADA;
@@ -12373,6 +12393,8 @@ body {
 	bottom: 5rem;
 	color: #fff;
 	font-size: 0.8rem;
+	border: 1px solid rgb(190,218,228);
+	border-radius: 10px;
 }
 
 .card-numeros {
@@ -12402,7 +12424,7 @@ body {
 	padding: 0.8rem;
 	background-color: #ffffff;
 	opacity: 90%;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 	text-decoration: none;
 }
 
@@ -12424,7 +12446,7 @@ body {
 	.card-cabec {
 		width: calc(100vw - 15px);
 		left: 0.5rem;
-		bottom: 1rem;
+		bottom: 0.5rem;
 		font-size: 0.7rem;
 		height: 120px;
 		text-align: left;
@@ -12437,6 +12459,7 @@ body {
 		position: absolute;
 		top: 0.5rem;
 		right: 0.5rem;
+		padding: 0.5rem;
 	}
 	.titulo-cabec {
 		text-align: left;
