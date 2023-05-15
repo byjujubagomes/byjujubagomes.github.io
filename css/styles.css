@@ -109,6 +109,11 @@
   src: url("../assets/fonts/next-art.heavy.otf") format("truetype");
 }
 
+@font-face{
+  font-family: "GaiaNumero";
+  src: url("../assets/fonts/GaiaNumero-Regular.ttf") format("truetype");
+}
+
 .map-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -12398,8 +12403,8 @@ body {
 }
 
 .card-numeros {
-	border: 1.5px solid #7db2c9;
-	border-radius: 25px;
+	/*border: 1.5px solid #7db2c9;
+	border-radius: 25px;*/
     /*background: url("../assets/img/gaia-folha-colorida-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));  */
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));  
     background-position: right bottom;
