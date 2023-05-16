@@ -15,6 +15,7 @@
  * Verde: #64a19d
  * Verde Gaia: #7db2c9
  * Areia: #f7d38e 
+ * Rosa: #dbb9bc;
  */
 
 :root {
@@ -61,6 +62,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-black-rgb: 0, 0, 0;
   --bs-gaia-rgb: 125, 178, 201;
+  --bs-gaia-rosa-rgb: 219, 185, 188;
   --bs-white-rgb: 255, 255, 255;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -4991,9 +4993,9 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  color: #212529;
+  color: #ffffff;
   text-align: left;
-  background-color: #fff;
+  background-color: #7db2c9;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -5005,8 +5007,8 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #5a918d;
-  background-color: #f0f6f5;
+  color: #ffffff;
+  background-color: #7db2c9;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
@@ -5045,7 +5047,7 @@ textarea.form-control-lg {
 
 .accordion-item {
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  /*border: 1px solid rgba(0, 0, 0, 0.125);*/
 }
 .accordion-item:first-of-type {
   border-top-left-radius: 0.25rem;
@@ -8172,6 +8174,11 @@ textarea.form-control-lg {
 .text-gaia {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-gaia-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-gaia-rosa {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-gaia-rosa-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-white {
@@ -12171,13 +12178,14 @@ body {
   border-radius: 5px;
   filter: drop-shadow(0 5px 10px 0 #ffffff);
   width: auto;
-  height: auto;
+  height: 58px;
   background-color: #dfecf2;
   padding: 10px;
   position: relative;
   z-index: 0;
   overflow: hidden;
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .card-destaque-dark {
@@ -12194,7 +12202,7 @@ body {
   align-items: center;
 }
 
-.card-destaque-light::before {
+/*.card-destaque-light::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -12204,7 +12212,7 @@ body {
   height:220px;
   width: 25px;
   border-radius: 32px;
-}
+}*/
 
 .card-destaque-dark::before {
   content: "";
@@ -12423,11 +12431,11 @@ body {
 }
 
 .botao-cabec {
-	border: 1.5px solid #ffffff;
+	border: 1.5px solid #e0ecee;
 	border-radius: 5px;
 	color: #7db2c9;
 	padding: 0.8rem;
-	background-color: #ffffff;
+	background-color: #e0ecee;
 	opacity: 90%;
 	font-size: 0.6rem;
 	text-decoration: none;
