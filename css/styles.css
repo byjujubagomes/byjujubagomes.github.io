@@ -4995,7 +4995,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: #ffffff;
   text-align: left;
-  background-color: #7db2c9;
+  background-color: #bed9e4;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -5008,7 +5008,7 @@ textarea.form-control-lg {
 }
 .accordion-button:not(.collapsed) {
   color: #ffffff;
-  background-color: #7db2c9;
+  background-color: #bed9e4;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
@@ -12178,13 +12178,13 @@ body {
   border-radius: 5px;
   filter: drop-shadow(0 5px 10px 0 #ffffff);
   width: auto;
-  height: 58px;
+  min-height: 58px;
   background-color: #dfecf2;
   padding: 10px;
   position: relative;
   z-index: 0;
   overflow: hidden;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
 }
 
