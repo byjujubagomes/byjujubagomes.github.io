@@ -113,7 +113,7 @@
 
 @font-face{
   font-family: "GaiaNumero";
-  src: url("../assets/fonts/GaiaNumero-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/GaiaNumero2-Regular.ttf") format("truetype");
 }
 
 .map-responsive{
@@ -11775,13 +11775,13 @@ body {
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: 0.5rem 0;
+    /*padding: 0.5rem 0;*/
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1.5rem;
-    color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 1rem;
+    color: rgba(0, 0, 0, 1);
   }
   #mainNav .nav-link:hover {
     color: rgba(0, 0, 0, 0.75);
@@ -11797,7 +11797,7 @@ body {
   }
   #mainNav.navbar-shrink .nav-link {
     color: #000;
-    padding: 1.5rem 1.5rem 1.25rem;
+    padding: 1.5rem 1rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
@@ -12125,7 +12125,7 @@ body {
   text-align: right;
 }
 .ribbon span {
-  font-size: 10px;
+  font-size: 8px;
   font-weight: bold;
   color: #FFF;
   text-transform: uppercase;
@@ -12465,7 +12465,7 @@ body {
 		text-align: left;
 	}
 	.card-depoimento {
-	  height: 395px;
+	  height: 400px;
 	}	
 	.botao-cabec {
 		font-size: 0.6rem;
