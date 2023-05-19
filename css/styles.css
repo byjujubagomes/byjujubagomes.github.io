@@ -4688,6 +4688,19 @@ textarea.form-control-lg {
 	}
 }
 
+.flip-card-fixo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: transparent;
+  width: 350px;
+  height: 217px;
+  perspective: 1000px;
+  margin: 0.3rem;
+}
+
 .flip-card {
   position: relative;
   display: flex;
@@ -12125,7 +12138,7 @@ body {
   text-align: right;
 }
 .ribbon span {
-  font-size: 8px;
+  font-size: 7px;
   font-weight: bold;
   color: #FFF;
   text-transform: uppercase;
