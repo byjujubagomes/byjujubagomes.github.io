@@ -113,7 +113,7 @@
 
 @font-face{
   font-family: "GaiaNumero";
-  src: url("../assets/fonts/GaiaNumero2-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/GaiaNumero3-Regular.ttf") format("truetype");
 }
 
 .map-responsive{
@@ -12478,7 +12478,7 @@ body {
 		text-align: left;
 	}
 	.card-depoimento {
-	  height: 400px;
+	  height: 410px;
 	}	
 	.botao-cabec {
 		font-size: 0.6rem;
