@@ -4738,7 +4738,7 @@ textarea.form-control-lg {
 }
 
 .flip-card-front {
-  background-color: #dfecf2;
+  background-color: transparent;
   color: black;
 }
 
