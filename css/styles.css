@@ -12429,6 +12429,27 @@ body {
 	border-radius: 10px;
 }
 
+.card-cabec-historia {
+    /*background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(190, 217, 228, 0.5), rgba(190, 217, 228, 0.6), rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8));  */
+	/*background: linear-gradient(to bottom, rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8), rgba(190, 217, 228, 0.9), rgba(190, 217, 228, 0.9));  */
+	background: rgb(190,218,228);
+	background: linear-gradient(71deg, rgba(190,218,228,0.9025735294117647) 0%, rgba(190,218,228,0.8997724089635855) 68%, rgba(190,218,228,0.8297443977591037) 84%, rgba(190,217,228,0.6784838935574229) 100%);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+	max-width: 500px;
+	position: absolute;
+	padding: 1.5rem;
+	justify-content: start ;
+	align-items: start;
+	left: 5rem;
+	bottom: 5rem;
+	color: #fff;
+	font-size: 0.8rem;
+	border: 1px solid rgb(190,218,228);
+	border-radius: 10px;
+}
+
 .card-numeros {
 	/*border: 1.5px solid #7db2c9;
 	border-radius: 25px;*/
@@ -12483,6 +12504,16 @@ body {
 		height: 120px;
 		text-align: left;
 	}
+
+	.card-cabec-historia {
+		width: calc(100vw - 15px);
+		left: 0.5rem;
+		bottom: 0.5rem;
+		font-size: 0.7rem;
+		height: 100px;
+		text-align: left;
+	}
+
 	.card-depoimento {
 	  height: 410px;
 	}	
