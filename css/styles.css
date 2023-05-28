@@ -114,7 +114,7 @@
 
 @font-face{
   font-family: "GaiaNumero";
-  src: url("../assets/fonts/GaiaNumero3-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/GaiaNumero-Regular.ttf") format("truetype");
 }
 
 .map-responsive{
@@ -3704,6 +3704,9 @@ textarea.form-control-lg {
 
 .dropdown-toggle {
   white-space: nowrap;
+  color: #000;
+  font-size: 0.8rem; 
+  text-decoration: none;
 }
 .dropdown-toggle::after {
   display: inline-block;
@@ -4939,7 +4942,7 @@ textarea.form-control-lg {
 
 @media (min-width: 767px) {
 	.image-resp {
-		min-height: calc(100vh - 80px);
+		min-height: calc(100vh - 170px);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4949,7 +4952,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 767px) {
 	.image-resp {
-		min-height: 470px;
+		min-height: 400px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -11830,6 +11833,12 @@ body {
     outline: none;
     border-bottom: 0.25rem solid #7db2c9;
   }
+  #mainNav .dropdown {
+    transition: none;
+    padding: 1.5rem 1rem;
+    color: #000;
+    /*border-bottom: 0.25rem solid transparent;*/
+  }
 }
 
 .btn {
@@ -12047,11 +12056,12 @@ body {
 }
 
 .footer {
+  background: url("../assets/img/gaia-folha-colorida-peq.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
   padding: 2rem 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), url("../assets/img/bg-rodape.png");
-  background-size: cover;
+  /*background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), url("../assets/img/bg-rodape.png");*/
+  background-size: fit-content;
   background-position: bottom right;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-attachment: scroll;
   margin-right: 0;
 }
@@ -12418,11 +12428,11 @@ body {
     background-attachment: scroll;
 	max-width: 500px;
 	position: absolute;
-	padding: 1.5rem;
+	padding: 1rem;
 	justify-content: start ;
 	align-items: start;
-	left: 5rem;
-	bottom: 5rem;
+	left: 3rem;
+	top: 2rem;
 	color: #fff;
 	font-size: 0.8rem;
 	border: 1px solid rgb(190,218,228);
@@ -12459,15 +12469,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
 	background-size: contain;
-	width: 180px;
+	/*width: 180px;
 	height: 130px;
 	position: relative;
-	padding: 1.5rem;
+	margin-bottom: 10px;*/
+	padding: 1rem;
 	justify-content: start;
 	align-items: start;
 	color: #000;
 	font-size: 0.8rem;
-	margin-bottom: 10px;
 }
 
 .botao-cabec {
@@ -12501,7 +12511,7 @@ body {
 		left: 0.5rem;
 		bottom: 0.5rem;
 		font-size: 0.7rem;
-		height: 120px;
+		height: 100px;
 		text-align: left;
 	}
 
