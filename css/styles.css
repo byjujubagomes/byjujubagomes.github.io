@@ -12449,11 +12449,11 @@ body {
     background-attachment: scroll;
 	max-width: 500px;
 	position: absolute;
-	padding: 1.5rem;
+	padding: 1rem;
 	justify-content: start ;
 	align-items: start;
-	left: 5rem;
-	bottom: 5rem;
+	left: 3rem;
+	top: 2rem;
 	color: #fff;
 	font-size: 0.8rem;
 	border: 1px solid rgb(190,218,228);
@@ -12518,10 +12518,10 @@ body {
 	.card-cabec-historia {
 		width: calc(100vw - 15px);
 		left: 0.5rem;
-		bottom: 0.5rem;
+		top: 1.5rem;
 		font-size: 0.7rem;
-		height: 100px;
-		text-align: left;
+		height: 70px;
+		text-align: center;
 	}
 
 	.card-depoimento {
