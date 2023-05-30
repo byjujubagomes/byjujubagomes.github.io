@@ -6548,7 +6548,7 @@ textarea.form-control-lg {
   justify-content: center;
   padding: 0;
   margin-right: 15%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-left: 15%;
   list-style: none;
 }
@@ -12061,7 +12061,7 @@ body {
   /*background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), url("../assets/img/bg-rodape.png");*/
   background-size: fit-content;
   background-position: bottom right;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-attachment: scroll;
   margin-right: 0;
 }
@@ -12418,48 +12418,6 @@ body {
   }
 }
 
-.card-cabec {
-    /*background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(190, 217, 228, 0.5), rgba(190, 217, 228, 0.6), rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8));  */
-	/*background: linear-gradient(to bottom, rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8), rgba(190, 217, 228, 0.9), rgba(190, 217, 228, 0.9));  */
-	background: rgb(190,218,228);
-	background: linear-gradient(71deg, rgba(190,218,228,0.9025735294117647) 0%, rgba(190,218,228,0.8997724089635855) 68%, rgba(190,218,228,0.8297443977591037) 84%, rgba(190,217,228,0.6784838935574229) 100%);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-	max-width: 500px;
-	position: absolute;
-	padding: 1rem;
-	justify-content: start ;
-	align-items: start;
-	left: 3rem;
-	top: 2rem;
-	color: #fff;
-	font-size: 0.8rem;
-	border: 1px solid rgb(190,218,228);
-	border-radius: 10px;
-}
-
-.card-cabec-historia {
-    /*background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(190, 217, 228, 0.5), rgba(190, 217, 228, 0.6), rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8));  */
-	/*background: linear-gradient(to bottom, rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8), rgba(190, 217, 228, 0.9), rgba(190, 217, 228, 0.9));  */
-	background: rgb(190,218,228);
-	background: linear-gradient(71deg, rgba(190,218,228,0.9025735294117647) 0%, rgba(190,218,228,0.8997724089635855) 68%, rgba(190,218,228,0.8297443977591037) 84%, rgba(190,217,228,0.6784838935574229) 100%);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-	max-width: 500px;
-	position: absolute;
-	padding: 1rem;
-	justify-content: start ;
-	align-items: start;
-	left: 3rem;
-	top: 2rem;
-	color: #fff;
-	font-size: 0.8rem;
-	border: 1px solid rgb(190,218,228);
-	border-radius: 10px;
-}
-
 .card-numeros {
 	/*border: 1.5px solid #7db2c9;
 	border-radius: 25px;*/
@@ -12480,17 +12438,6 @@ body {
 	font-size: 0.8rem;
 }
 
-.botao-cabec {
-	border: 1.5px solid #e0ecee;
-	border-radius: 5px;
-	color: #7db2c9;
-	padding: 0.8rem;
-	background-color: #e0ecee;
-	opacity: 90%;
-	font-size: 0.6rem;
-	text-decoration: none;
-}
-
 .botao-gaia {
 	border: 1.5px solid #7db2c9;
 	border-radius: 5px;
@@ -12505,6 +12452,42 @@ body {
 	opacity: 100%;
 }
 
+.card-cabec {
+    /*background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(190, 217, 228, 0.5), rgba(190, 217, 228, 0.6), rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8));  */
+	/*background: linear-gradient(to bottom, rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8), rgba(190, 217, 228, 0.9), rgba(190, 217, 228, 0.9));  */
+	background: rgb(190,218,228);
+	background: linear-gradient(71deg, rgba(190,218,228,0.9025735294117647) 0%, rgba(190,218,228,0.8997724089635855) 68%, rgba(190,218,228,0.8297443977591037) 84%, rgba(190,217,228,0.6784838935574229) 100%);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+	max-width: 500px;
+	position: absolute;
+	padding: 1rem;
+	justify-content: start ;
+	align-items: start;
+	color: #fff;
+	border: 1px solid rgb(190,218,228);
+	border-radius: 10px;
+}
+
+.card-cabec-historia {
+    /*background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(190, 217, 228, 0.5), rgba(190, 217, 228, 0.6), rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8));  */
+	/*background: linear-gradient(to bottom, rgba(190, 217, 228, 0.7), rgba(190, 217, 228, 0.8), rgba(190, 217, 228, 0.9), rgba(190, 217, 228, 0.9));  */
+	background: rgb(190,218,228);
+	background: linear-gradient(71deg, rgba(190,218,228,0.9025735294117647) 0%, rgba(190,218,228,0.8997724089635855) 68%, rgba(190,218,228,0.8297443977591037) 84%, rgba(190,217,228,0.6784838935574229) 100%);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+	max-width: 500px;
+	position: absolute;
+	padding: 1rem;
+	justify-content: start ;
+	align-items: start;
+	color: #fff;
+	border: 1px solid rgb(190,218,228);
+	border-radius: 10px;
+}
+
 @media (max-width: 500px) {
 	.card-cabec {
 		width: calc(100vw - 15px);
@@ -12514,16 +12497,14 @@ body {
 		height: 100px;
 		text-align: left;
 	}
-
 	.card-cabec-historia {
 		width: calc(100vw - 15px);
 		left: 0.5rem;
-		top: 1.5rem;
+		bottom: 2rem;
 		font-size: 0.7rem;
 		height: 70px;
 		text-align: center;
 	}
-
 	.card-depoimento {
 	  height: 410px;
 	}	
@@ -12532,18 +12513,45 @@ body {
 		position: absolute;
 		top: 0.5rem;
 		right: 0.5rem;
-		padding: 0.5rem;
+		padding: 0.35rem;
 	}
 	.titulo-cabec {
 		text-align: left;
+		font-size: 0.9rem;
 	}
 }
 
-.titulo-cabec {
-	font-family: GaiaHeavy;
-	font-size: 1.1rem;	
+@media (min-width: 501px) {
+	.card-cabec {
+		left: 3rem;
+		top: 2rem;
+		font-size: 0.8rem;
+	}
+	.card-cabec-historia {
+		left: 3rem;
+		top: 2rem;
+		font-size: 0.8rem;
+	}
+	.botao-cabec {
+		padding: 0.8rem;
+		font-size: 0.6rem;
+	}
+	.titulo-cabec {
+		font-size: 1.1rem;	
+	}
 }
 
+.botao-cabec {
+	border: 1.5px solid #e0ecee;
+	border-radius: 5px;
+	color: #7db2c9;
+	background-color: #e0ecee;
+	opacity: 90%;
+	text-decoration: none;
+}
+.titulo-cabec {
+	font-family: GaiaHeavy;
+}
 
 .btn-saibamais {
   color: #fff;
