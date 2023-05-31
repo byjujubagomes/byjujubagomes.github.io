@@ -4707,7 +4707,7 @@ textarea.form-control-lg {
 
 .flip-card {
   position: relative;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -4719,18 +4719,24 @@ textarea.form-control-lg {
 }
 
 .flip-card-inner {
+  cursor: pointer;	
   position: relative;
   width: 100%;
   height: 100%;
   text-align: left;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  transform-origin: center right;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+.flip-card-inner.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
 }
+
+/*.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}*/
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -6548,7 +6554,7 @@ textarea.form-control-lg {
   justify-content: center;
   padding: 0;
   margin-right: 15%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   margin-left: 15%;
   list-style: none;
 }
@@ -11839,6 +11845,15 @@ body {
     color: #000;
     /*border-bottom: 0.25rem solid transparent;*/
   }
+  #navMobile {
+	display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #navDesktop {
+	display: none;
+  }
 }
 
 .btn {
@@ -12490,12 +12505,15 @@ body {
 
 @media (max-width: 500px) {
 	.card-cabec {
+		display: flex;
 		width: calc(100vw - 15px);
 		left: 0.5rem;
 		bottom: 0.5rem;
 		font-size: 0.7rem;
 		height: 100px;
 		text-align: left;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	.card-cabec-historia {
 		width: calc(100vw - 15px);
@@ -12523,9 +12541,15 @@ body {
 
 @media (min-width: 501px) {
 	.card-cabec {
+		display: flex;
 		left: 3rem;
 		top: 2rem;
 		font-size: 0.8rem;
+		height: 140px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+
 	}
 	.card-cabec-historia {
 		left: 3rem;
