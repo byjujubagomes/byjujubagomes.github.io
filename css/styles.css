@@ -5930,6 +5930,17 @@ textarea.form-control-lg {
   outline: 0;
 }
 
+.modal-saiba-mais{
+  border: 0; 
+  background: url("../assets/img/gaia-folha-peq.png"), #fff;	
+  background-size: fit-content;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin-right: 0;	
+  font-size: 0.7rem;
+}
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -12575,6 +12586,18 @@ body {
 }
 .titulo-cabec {
 	font-family: GaiaHeavy;
+}
+
+.botao-matricule {
+	border: 1.5px solid #7db2c9;
+	border-radius: 5px;
+	color: #e0ecee;
+	background-color: #7db2c9;
+	opacity: 90%;
+	text-decoration: none;
+	padding: 0.8rem;
+	font-size: 0.8rem;
+	
 }
 
 .btn-saibamais {
