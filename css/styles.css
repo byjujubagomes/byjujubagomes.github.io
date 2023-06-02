@@ -4700,9 +4700,9 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: transparent;
   width: 350px;
-  height: 217px;
+  height: 207px;
   perspective: 1000px;
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 
 .flip-card {
@@ -4713,9 +4713,9 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: transparent;
   width: 350px;
-  height: 217px;
+  height: 207px;
   perspective: 1000px;
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 
 .flip-card-inner {
@@ -4753,6 +4753,7 @@ textarea.form-control-lg {
 }
 
 .flip-card-back {
+  height: 207px;
   align-items: center;
   background-color: #7db2c9;
   color: white;
