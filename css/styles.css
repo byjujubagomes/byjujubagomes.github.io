@@ -4719,7 +4719,6 @@ textarea.form-control-lg {
 }
 
 .flip-card-inner {
-  cursor: pointer;	
   position: relative;
   width: 100%;
   height: 100%;
@@ -4748,6 +4747,7 @@ textarea.form-control-lg {
 }
 
 .flip-card-front {
+  cursor: pointer;	
   background-color: transparent;
   color: black;
 }
@@ -12612,6 +12612,7 @@ body {
   bottom: 1.5rem;
   left: 1.5rem;
   box-shadow: 0px;
+  z-index: 1;
 }
 .btn-saibamais:hover {
   color: #fff;
