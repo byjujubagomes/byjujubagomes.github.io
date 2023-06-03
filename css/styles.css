@@ -12612,8 +12612,10 @@ body {
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
-  box-shadow: 0px;
   z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
 }
 .btn-saibamais:hover {
   color: #fff;
