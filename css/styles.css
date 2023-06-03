@@ -4766,6 +4766,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-attachment: scroll;
   padding: 1.5rem;
+  z-index: 1;
 }
 
 .card-titulo {
@@ -12609,7 +12610,7 @@ body {
   padding: 10px;
   font-size: 0.6rem;  
   font-weight: bolder;
-  position: absolute;
+  position: fixed;
   bottom: 1.5rem;
   left: 1.5rem;
   z-index: 1;
