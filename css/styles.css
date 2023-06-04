@@ -4754,18 +4754,16 @@ textarea.form-control-lg {
 
 .flip-card-back {
   height: 207px;
-  background-color: #7db2c9;
   color: white;
-  transform: rotateY(180deg);
-  display: flex;
-  justify-content: center;
+  display: block;
   align-items: start;
-  background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0)); 
+  padding: 1.5rem;
+  z-index: 1;
+  background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 0.3)); 
   background-position: right bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  padding: 1.5rem;
-  z-index: 1;
+  transform: rotateY(180deg);
 }
 
 .card-titulo {
