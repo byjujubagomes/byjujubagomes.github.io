@@ -12652,6 +12652,23 @@ body {
   color: #fff;
 }
 
+.btn-saibamais2 {
+  color: #fff;
+  background-color: #7db2c9;
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.6rem;  
+  font-weight: bolder;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 9.5rem;
+  z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+}
+
 .back-to-top {
 	border: 1.5px solid #bed9e4;
 	border-radius: 5px;
