@@ -4726,11 +4726,14 @@ textarea.form-control-lg {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   transform-origin: center right;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: center right;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card-inner.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
+  -webkit-transform: translateX(-100%) rotateY(-180deg);
 }
 
 /*.flip-card:hover .flip-card-inner {
@@ -4765,6 +4768,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-attachment: scroll;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .flip-card-back-2 {
