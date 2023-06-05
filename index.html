@@ -592,7 +592,7 @@
 						</div>
 					</div>				
 					<div class="flip-card">
-						<div class="flip-card-inner text-white">
+						<div class="flip-card-inner text-white"  id="flip-card-inner-3">
 							<div class="flip-card-front">
 								<img src="assets/img/onda-carla.jpeg" class="card-img" alt="...">
 								<p class="card-titulo text-start">AULA PARTICULAR DE SURFE</p>
@@ -601,9 +601,9 @@
 								<p>
 									<b>AULA PARTICULAR DE SURFE</b><br><br> 
 									Essa é uma aula individual de surfe, com dia e horários agendados. O local da aula é definido junto ao professor<br>
-									<button type="button" class="btn btn-saibamais" data-bs-toggle="modal" data-bs-target="#modalAulaParticularSurfe">
-									  Saiba Mais
-									</button>
+									<a href="#" class="btn-saibamais" data-bs-toggle="modal" data-bs-target="#modalAulaParticularSurfe">
+									  SAIBA MAIS
+									</a>
 								</p> 
 							</div>
 						</div>
@@ -614,16 +614,13 @@
 								<img src="assets/img/surfe-turma-especial.jpeg" class="card-img" alt="...">
 								<p class="card-titulo text-start">AULA DE SURFE TURMA ESPECIAL</p>
 							</div>
-							<div class="flip-card-back">
+							<div class="flip-card-back" id="flip-card-btn-turn-to-front">
 								<p>
 									<b>AULA DE SURFE TURMA ESPECIAL</b><br><br>
 									Essa é uma aula de surfe em grupo, com dia e horários agendados<br>
-									<button type="button" class="btn btn-saibamais" data-bs-toggle="modal" data-bs-target="#modalAulaSurfeEspecial">
-									  Saiba Mais
-									</button>
-									<button type="button" class="btn btn-saibamais-fechar"  id="flip-card-btn-turn-to-front">
-									  Fechar
-									</button>
+									<a href="#" class="btn-saibamais" data-bs-toggle="modal" data-bs-target="#modalAulaSurfeEspecial">
+									  SAIBA MAIS
+									</a>
 								</p>
 							</div>
 						</div>
@@ -638,11 +635,11 @@
 								<p>
 									PLANILHA DE TREINO<br><br> 
 									Serviço voltado aos praticantes de surfe que visam fazer um treinamento de força complementar através de planilhas online de treinos elaborada pela nossa equipe de professores especialmente para você<br>
-									<button type="button" class="btn btn-saibamais" data-bs-toggle="modal" data-bs-target="#modalPlanilhaTreino">
-									  Saiba Mais
-									</button>
 									<a href="#" class="btn-saibamais-base" data-bs-toggle="modal" data-bs-target="#modalPlanilhaTreino">
 									  &nbsp;
+									</a>
+									<a href="#" class="btn-saibamais" data-bs-toggle="modal" data-bs-target="#modalPlanilhaTreino">
+									  SAIBA MAIS
 									</a>
 								</p> 
 							</div>
@@ -882,6 +879,11 @@
 			  document.getElementById('flip-card-btn-turn-to-front-2').onclick = function() {
 			  document.getElementById('flip-card-inner-2').classList.toggle('is-flipped');
 			  };
+
+			  document.getElementById('flip-card-inner-3').onclick = function() {
+			  document.getElementById('flip-card-inner-3').classList.toggle('is-flipped');
+			  };
+
 			//var cards = document.querySelectorAll('.flip-card-inner');
 			//	[...cards].forEach((card)=>{
 			//	  card.addEventListener( 'click', function() {
