@@ -517,6 +517,25 @@
 					</div>
 				</div>
 				<div class="row row-cols-1 row-cols-md-3 g-6 justify-content-center">
+				
+					<!--div class="plip-card-3D-wrapper">
+						<div id="plip-card">
+							<div class="plip-card-front">
+								<img src="assets/img/aula-tartaruga.jpeg" class="card-img" alt="...">
+								<p class="card-titulo text-start">AULA MENSAL DE SURFE</p>
+								<button id="plip-card-btn-turn-to-back">flip</button>
+							</div>
+							<div class="plip-card-back">
+								<p>
+									<b>AULA MENSAL DE SURFE</b><br><br> 
+									Essa é uma aula de surfe em grupo, com dias e horários fixos na semana<br>
+								</p>
+								<button id="plip-card-btn-turn-to-front">flip</button>
+							</div>
+						</div>
+					</div!-->				
+				
+				
 					<div class="flip-card">
 						<div class="flip-card-inner text-white">
 							<div class="flip-card-front">
@@ -590,8 +609,8 @@
 						</div>
 					</div>				
 					<div class="flip-card">
-						<div class="flip-card-inner text-white">
-							<div class="flip-card-front">
+						<div class="flip-card-inner text-white" id="flip-card-inner">
+							<div class="flip-card-front" id="flip-card-btn-turn-to-back">
 								<img src="assets/img/surfe-turma-especial.jpeg" class="card-img" alt="...">
 								<p class="card-titulo text-start">AULA DE SURFE TURMA ESPECIAL</p>
 							</div>
@@ -602,17 +621,20 @@
 									<button type="button" class="btn btn-saibamais" data-bs-toggle="modal" data-bs-target="#modalAulaSurfeEspecial">
 									  Saiba Mais
 									</button>
+									<button type="button" class="btn btn-saibamais-fechar"  id="flip-card-btn-turn-to-front">
+									  Fechar
+									</button>
 								</p>
 							</div>
 						</div>
 					</div>				
 					<div class="flip-card">
-						<div class="flip-card-inner text-white">
-							<div class="flip-card-front">
+						<div class="flip-card-inner text-white" id="flip-card-inner-2">
+							<div class="flip-card-front" id="flip-card-btn-turn-to-back-2">
 								<img src="assets/img/planilha-treino.jpeg" class="card-img" alt="...">
 								<p class="card-titulo text-start">PLANILHA DE TREINO</p>
 							</div>
-							<div class="flip-card-back-4">
+							<div class="flip-card-back" id="flip-card-btn-turn-to-front-2">
 								<p>
 									PLANILHA DE TREINO<br><br> 
 									Serviço voltado aos praticantes de surfe que visam fazer um treinamento de força complementar através de planilhas online de treinos elaborada pela nossa equipe de professores especialmente para você<br>
@@ -830,13 +852,42 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 			
-			var cards = document.querySelectorAll('.flip-card-inner');
+              document.addEventListener('DOMContentLoaded', function(event) {
 
-				[...cards].forEach((card)=>{
-				  card.addEventListener( 'click', function() {
-					card.classList.toggle('is-flipped');
-				  });
-				});
+			  document.getElementById('plip-card-btn-turn-to-back').style.visibility = 'visible';
+			  document.getElementById('plip-card-btn-turn-to-front').style.visibility = 'visible';
+
+			  document.getElementById('plip-card-btn-turn-to-back').onclick = function() {
+			  document.getElementById('plip-card').classList.toggle('do-flip');
+			  };
+
+			  document.getElementById('plip-card-btn-turn-to-front').onclick = function() {
+			  document.getElementById('plip-card').classList.toggle('do-flip');
+			  };
+
+			});
+
+			  document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
+			  document.getElementById('flip-card-inner').classList.toggle('is-flipped');
+			  };
+
+			  document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
+			  document.getElementById('flip-card-inner').classList.toggle('is-flipped');
+			  };
+
+			  document.getElementById('flip-card-btn-turn-to-back-2').onclick = function() {
+			  document.getElementById('flip-card-inner-2').classList.toggle('is-flipped');
+			  };
+
+			  document.getElementById('flip-card-btn-turn-to-front-2').onclick = function() {
+			  document.getElementById('flip-card-inner-2').classList.toggle('is-flipped');
+			  };
+			//var cards = document.querySelectorAll('.flip-card-inner');
+			//	[...cards].forEach((card)=>{
+			//	  card.addEventListener( 'click', function() {
+			//		card.classList.toggle('is-flipped');
+			//	  });
+			//	});
 				
 				window.addEventListener('load', function() {
 					new FastClick(document.body);
