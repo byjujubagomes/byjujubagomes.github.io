@@ -4705,94 +4705,6 @@ textarea.form-control-lg {
   margin: 0.5rem;
 }
 
-/*INICIO NOVO FLIPCARD */
-
-.plip-card-3D-wrapper {
-  position: relative;
-  word-wrap: break-word;
-  background-color: transparent;
-  width: 350px;
-  height: 207px;
-  margin: 0.5rem;
-  -o-perspective: 900px;
-  -webkit-perspective: 900px;
-  -ms-perspective: 900px;
-  perspective: 900px;
-}
-
-#plip-card {
-  text-align: left;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  -o-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.do-flip {
-  -o-transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-#plip-card-btn-turn-to-back, #plip-card-btn-turn-to-front {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 40px;
-  height: 40px;
-  background: white;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: .7em;
-  padding: 0;
-  color: grey;
-  border: 1px solid grey;
-}
-
-#plip-card .plip-card-front, .plip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 2;
-  font-size: 0.7rem;
-}
-
-#plip-card .plip-card-front {
-  cursor: pointer;	
-  background-color: transparent;
-  color: black;
-  height: 217px;
-}
-#plip-card .plip-card-back {
-  height: 217px;
-  color: white;
-  display: block;
-  align-items: start;
-  padding: 1.5rem;
-  background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0)); 
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  -o-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-/*FIM NOVO FLIP CARD*/
-
 .flip-card {
   position: relative;
   display: inline-block;
@@ -4821,13 +4733,6 @@ textarea.form-control-lg {
   z-index: 2;
 }
 
-/*.flip-card-inner.is-flipped {
-  -o-transform: translateX(-100%) rotateY(-180deg);
-  -webkit-transform: translateX(-100%) rotateY(-180deg);
-  -ms-transform: translateX(-100%) rotateY(-180deg);
-  transform: translateX(-100%) rotateY(-180deg);
-}*/
-
 .is-flipped {
   -o-transform: translateX(-100%) rotateY(-180deg);
   -webkit-transform: translateX(-100%) rotateY(-180deg);
@@ -4839,11 +4744,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-/*.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}*/
-
-.flip-card-front, .flip-card-back, .flip-card-back-4 {
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -4872,22 +4773,6 @@ textarea.form-control-lg {
   background-attachment: scroll;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-  z-index: 1;
-}
-
-.flip-card-back-4.is-flipped {
-  z-index: 4;
-}
-
-.flip-card-back-4 {
-  height: 217px;
-  color: white;
-  align-items: start;
-  padding: 1.5rem;
-  background: url("../assets/img/gaia-folha-branco-peq.png"), linear-gradient(to bottom, rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0), rgba(125, 178, 201, 1.0)); 
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
   z-index: 1;
 }
 
